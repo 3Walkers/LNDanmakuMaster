@@ -21,6 +21,9 @@
     CGFloat totalDistance = self.width + attributes.size.width;
     CGFloat currentDistance = totalDistance * percent;
     CGFloat currentX = self.startPosition.x + self.width - currentDistance;
+    if (attributes.isRTL) {
+        currentX = -currentX;
+    }
     CGFloat currentY = self.startPosition.y - attributes.size.height/2.f;
     attributes.position = CGPointMake(currentX, currentY);
 }

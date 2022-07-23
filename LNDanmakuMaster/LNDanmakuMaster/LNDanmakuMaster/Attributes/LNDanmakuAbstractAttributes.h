@@ -33,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGPoint position;
 @property (nonatomic, assign) CATransform3D transform;
 @property (nonatomic, assign) float opacity;
+@property (nonatomic, assign) bool isRTL;
 
 //Normally, TrackControllers use
 //Seek/recover may also set this property at the beginning.
